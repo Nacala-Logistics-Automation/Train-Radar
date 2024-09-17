@@ -1,0 +1,6 @@
+pandas
+fastkml
+shapely
+setuptools
+lxml
+openpyxl
