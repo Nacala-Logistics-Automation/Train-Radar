@@ -48,9 +48,9 @@ railway_line = [
     #{"id": "1270", "local": "WHW1", "lat": -0, "lon":0}, # METOCHERIA
 
 
-    {"id": "1260", "local": "WCSWHWB", "lat": -0, "lon":0}, # CRUSHER
+    {"id": "1260", "local": "WCSWHWB", "lat": -14.899686, "lon":40.048899}, # CRUSHER
     {"id": "1255", "local": "WCSWHWA", "lat": -0, "lon":0}, # CRUSHER
-    {"id": "50755", "local": "WCSW1T", "lat": -0, "lon":0}, # CRUSHER
+    {"id": "50755", "local": "WCSW1T", "lat": -14.913004, "lon":40.012391}, # CRUSHER
     #{"id": "1250", "local": "WCS11", "lat": -14.9003683192548, "lon":40.0448164306434}, # CRUSHER
 
     {"id": "1220", "local": "WNL1P", "lat": -14.9290125444662, "lon":39.9692138858065}, # NAMIALO
