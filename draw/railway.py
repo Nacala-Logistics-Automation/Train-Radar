@@ -210,65 +210,236 @@ railway_line = [
     {"id": "50470", "local": "WCRW1T", "lat":-14.961639, "lon": 37.673120}, # CAIS DE RIANE
     {"id": "50475", "local": "WCRW2T", "lat":-14.945302, "lon": 37.655560}, # CAIS DE RIANE
 
-    {"id": "19", "local": "WNCW3T", "lat": -14.9188676485196, "lon":37.6344490494706}, # NAMECUNA
-    {"id": "21", "local": "WNC2P", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "22", "local": "WNCW4T", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "23", "local": "WNC22", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "24", "local": "WNC1", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "102", "local": "WNC3", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "103", "local": "WNCW5T", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "755", "local": "WNC1P", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "760", "local": "WNC12", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "765", "local": "WNCWCR", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "50460", "local": "WNCW1T", "lat": -0, "lon":0}, # NAMECUNA
-    {"id": "50465", "local": "WNCW2T", "lat": -0, "lon":0}, # NAMECUNA
+    {"id": "19", "local": "WNCW3T", "lat":-14.942826, "lon":37.652992}, # NAMECUNA
+    {"id": "21", "local": "WNC2P", "lat": -14.938008, "lon":37.649347}, # NAMECUNA
+    {"id": "22", "local": "WNCW4T", "lat":-14.933604, "lon":37.646160}, # NAMECUNA
+    {"id": "23", "local": "WNC22", "lat":-14.928717, "lon":37.641837}, # NAMECUNA
+    {"id": "24", "local": "WNC1", "lat":-14.923583, "lon": 37.637666}, # NAMECUNA
+    {"id": "102", "local": "WNC3", "lat":-14.918497, "lon": 37.633592}, # NAMECUNA
+    {"id": "103", "local": "WNCW5T", "lat":-14.910062, "lon": 37.623174}, # NAMECUNA
+    {"id": "755", "local": "WNC1P", "lat":-14.912914, "lon": 37.603495}, # NAMECUNA
+    {"id": "760", "local": "WNC12", "lat":-14.915953, "lon": 37.588315}, # NAMECUNA
+    {"id": "765", "local": "WNCWCR", "lat":-14.919319, "lon": 37.571590}, # NAMECUNA
+    {"id": "50460", "local": "WNCW1T", "lat":-14.921915, "lon": 37.558787}, # NAMECUNA
+    {"id": "50465", "local": "WNCW2T", "lat":-14.926726, "lon": 37.543696}, # NAMECUNA
     
-    {"id": "735", "local": "WEAP", "lat": -14.931261043373, "lon":37.5362635794731}, # NATALEIA
-    {"id": "740", "local": "WEA1", "lat": -0, "lon":0}, # NATALEIA
-    {"id": "745", "local": "WEAWNCA", "lat": -0, "lon":0}, # NATALEIA
-    {"id": "750", "local": "WEAWNCB", "lat": -0, "lon":0}, # NATALEIA
-    {"id": "50450", "local": "WEAW1T", "lat": -0, "lon":0}, # NATALEIA
-    {"id": "50455", "local": "WEAW2T", "lat": -0, "lon":0}, # NATALEIA
+    {"id": "735", "local": "WEAP", "lat":-14.927900, "lon": 37.542133}, # NATALEIA
+    {"id": "740", "local": "WEA1", "lat":-14.939862, "lon": 37.521878}, # NATALEIA
+    {"id": "745", "local": "WEAWNCA", "lat":-14.928937, "lon":37.503866}, # NATALEIA
+    {"id": "750", "local": "WEAWNCB", "lat":-14.922211, "lon": 37.481130}, # NATALEIA
+    {"id": "50450", "local": "WEAW1T", "lat":-14.928994, "lon": 37.458726}, # NATALEIA
+    {"id": "50455", "local": "WEAW2T", "lat": -14.933849, "lon": 37.439017}, # NATALEIA
 
-    {"id": "715", "local": "WMWP", "lat": -14.9289178432668, "lon":37.4544751646126}, # MALEMA NEW
-    {"id": "720", "local": "WMW1", "lat": -0, "lon":0}, # MALEMA NEW
-    {"id": "725", "local": "WMWWEAA", "lat": -0, "lon":0}, # MALEMA NEW
-    {"id": "730", "local": "WMWWEAB", "lat": -0, "lon":0}, # MALEMA NEW
-    {"id": "50440", "local": "WMWW1T", "lat": -0, "lon":0}, # MALEMA NEW
-    {"id": "50445", "local": "WMWW2T", "lat": -0, "lon":0}, # MALEMA NEW
+    {"id": "715", "local": "WMWP", "lat":-14.934696, "lon": 37.437505}, # MALEMA NEW
+    {"id": "720", "local": "WMW1", "lat":-14.936813, "lon": 37.434108}, # MALEMA NEW
+    {"id": "725", "local": "WMWWEAA", "lat":-14.939277, "lon": 37.431107}, # MALEMA NEW
+    {"id": "730", "local": "WMWWEAB", "lat":-14.945251 , "lon": 37.427329}, # MALEMA NEW
+    {"id": "50440", "local": "WMWW1T", "lat":-14.951200, "lon": 37.422170}, # MALEMA NEW
+    {"id": "50445", "local": "WMWW2T", "lat":-14.947123, "lon": 37.415845}, # MALEMA NEW
 
     {"id": "41", "local": "WMM1", "lat": -14.946474319992, "lon":37.415591062648}, # MALEMA
-    {"id": "680", "local": "WMMP", "lat": -0, "lon":0}, # MALEMA
-    {"id": "710", "local": "WMMWMW", "lat": -0, "lon":0}, # MALEMA
-    {"id": "50415", "local": "WMMW1T", "lat": -0, "lon":0}, # MALEMA
-    {"id": "50420", "local": "WMMW2T", "lat": -0, "lon":0}, # MALEMA
+    {"id": "680", "local": "WMMP", "lat":-14.947625, "lon":  37.237581}, # MALEMA
+    {"id": "710", "local": "WMMWMW", "lat":-14.951582, "lon": 37.350137}, # MALEMA
+    {"id": "50415", "local": "WMMW1T", "lat":-14.957064, "lon":  37.296194}, # MALEMA
+    {"id": "50420", "local": "WMMW2T", "lat":-14.930023, "lon": 37.250017}, # MALEMA
 
-    {"id": "660", "local": "WTUP", "lat": -14.9298662431994, "lon":37.2499006363285}, # TUI
+    {"id": "660", "local": "WTUP", "lat": -14.929357, "lon": 37.248106}, # TUI
+    {"id": "670", "local": "WTUWMMA", "lat":-14.928206, "lon": 37.234105}, # TUI
+    {"id": "675", "local": "WTUWMMB", "lat":-14.933144, "lon": 37.219546}, # TUI
+    {"id": "50405", "local": "WTUW1T", "lat":-14.937778, "lon": 37.196365}, # TUI
+    {"id": "50410", "local": "WTUW2T", "lat": -14.934315, "lon": 37.173931}, # TUI
+    
+
+    {"id": "645", "local": "WTWP", "lat":-14.934356, "lon":37.161758}, # NACATA NEW
+    {"id": "655", "local": "WTWWTU", "lat":-14.913569, "lon": 37.109053}, # NACATA NEW
+    {"id": "50395", "local": "WTWW1T", "lat":-14.890056, "lon":37.071023}, # NACATA NEW
+    {"id": "50400", "local": "WTWW2T", "lat":-14.840412, "lon": 37.012080}, # NACATA NEW
 
 
-    {"id": "13", "local": "WMTW3T", "lat": -14.8346879656397, "lon":37.0075678611033}, # MUTUALI
-    {"id": "50380", "local": "WLUP", "lat": -14.7952666818142, "lon":36.8545000405412}, # LURIO NEW
-    {"id": "37", "local": "MURISSA", "lat": -14.7860372282036, "lon":36.6979903657642}, # MURISSA
-    {"id": "97", "local": "WCB22", "lat": -14.8043375120626, "lon":36.5296808606601}, # CUAMBA
-    {"id": "36", "local": "WCBW2T", "lat": -14.8066639273132, "lon":36.5245002199562}, # CUAMBA
-    {"id": "92", "local": "WCWW3T", "lat": -14.958864746194, "lon":36.2595929617856}, # CUAMBA NEW
-    {"id": "470", "local": "WCAP", "lat": -14.9968642008328, "lon":36.1488691784477}, # CARONGA
-    {"id": "450", "local": "TO-BUE", "lat": -15.0222812429901, "lon":36.0775125243594}, # TO-BUE
-    {"id": "11", "local": "WEL22", "lat": -14.9819778844452, "lon":35.8786666806612}, # ENTRE LAGOS
-    {"id": "9", "local": "XNYWELB", "lat": -14.9727343627882, "lon":35.8589443221309}, # NAYUCI
-    {"id": "365", "local": "XNJP", "lat": -14.9696775724661, "lon":35.6650559669449}, # NAMANJA
-    {"id": "8", "local": "LAMBULILA", "lat": -15.0006109953298, "lon":35.5100726166156}, # LAMBULILA
-    {"id": "315", "local": "XMWP", "lat": -15.049790361392, "lon":35.3940609209406}, # MOLIPA
-    {"id": "78", "local": "XLW24", "lat": -15.0708537718331, "lon":35.1930967255084}, # LIWONDE
-    {"id": "240", "local": "XNWP", "lat": -15.1050965420217, "lon":35.0687993216519}, # NKAYA NEW
-    {"id": "235", "local": "XNTXNW", "lat": -15.1288377298938, "lon":35.0268297277536}, # NKAYA JUNCTION
-    {"id": "50120", "local": "LOOP 6 CL", "lat": -15.2619974181341, "lon":34.9290582805273}, # LOOP 6 CL
-    {"id": "4", "local": "FACILITIES ZALEWA", "lat": -15.411509910165, "lon":34.8243404319391}, # FACILITIES ZALEWA
-    {"id": "50110", "local": "LOOP 5 CL", "lat": -15.4227564469314, "lon":34.8089932888488}, # LOOP 5 CL
-    {"id": "160", "local": "LOOP 4 CL", "lat": -15.5629497804683, "lon":34.6678802631617}, # LOOP 4 CL
-    {"id": "3", "local": "LOOP 3 CL", "lat": -15.7698454818077, "lon":34.4916313220434}, # LOOP 3 CL
-    {"id": "75", "local": "LOOP 2 CL", "lat": -15.8197868392766, "lon":34.2810857141549}, # LOOP 2 CL
-    {"id": "1", "local": "LOOP 1 CL", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "13", "local": "WMTW3T", "lat":-14.826273, "lon":36.997750}, # MUTUALI
+    {"id": "14", "local": "WMTW4T", "lat": -14.817661, "lon": 36.986387}, # MUTUALI
+    {"id": "16", "local": "WMT2P", "lat":-14.810459, "lon": 36.972286}, # MUTUALI
+    {"id": "17", "local": "WMT3P", "lat":-14.810279, "lon": 36.954385}, # MUTUALI
+    {"id": "620", "local": "WMT1P", "lat":-14.811531, "lon": 36.933116}, # MUTUALI
+    {"id": "630", "local": "WMTWTWA", "lat":-14.807341, "lon": 36.894035}, # MUTUALI
+    {"id": "635", "local": "WMTWWTWB", "lat":-14.802486, "lon": 36.885446}, # MUTUALI
+    {"id": "640", "local": "WMTWTWC", "lat": -14.799267, "lon": 36.858232}, # MUTUALI
+    {"id": "50385", "local": "WMTW1T", "lat":-14.792773, "lon": 36.850446}, # MUTUALI
+    {"id": "50390", "local": "WMTW2T", "lat":-14.800673, "lon": 36.832320}, # MUTUALI
+   
+    {"id": "600", "local": "WLUP", "lat":-14.800185, "lon": 36.830066}, # LURIO NEW
+    {"id": "610", "local": "WLUWMTA", "lat":-14.800026, "lon": 36.780350}, # LURIO NEW
+    {"id": "615", "local": "WLUWMTB", "lat":-14.799833, "lon":36.809881}, # LURIO NEW
+    {"id": "50375", "local": "WLUW1T", "lat":-14.798601, "lon":36.740505}, # LURIO NEW
+    {"id": "50380", "local": "WLUW2T", "lat":-14.785441, "lon":36.694162}, # LURIO NEW
+    
+
+ 
+    {"id": "37", "local": "WSSW1T", "lat":-14.786177, "lon":36.689925}, # MURISSA
+    {"id": "39", "local": "WSSW2T", "lat":-14.796788, "lon":36.624678}, # MURISSA
+    {"id": "580", "local": "WSSP", "lat":-14.789817, "lon": 36.668452}, # MURISSA
+    {"id": "590", "local": "WSSWLUA", "lat":-14.801588, "lon": 36.587867}, # MURISSA
+    {"id": "595", "local": "WSSWLUB", "lat":-14.803634, "lon": 36.558758}, # MURISSA
+
+    {"id": "36", "local": "WCBW2T", "lat":-14.803801, "lon":36.533933}, # CUAMBA
+    {"id": "535", "local": "WCBP", "lat":-14.808347, "lon": 36.521927}, # CUAMBA
+    {"id": "570", "local": "WCBWSSA", "lat":-14.814310, "lon":36.513141}, # CUAMBA
+    {"id": "575", "local": "WCBWSSB", "lat":-14.821045, "lon":36.504749}, # CUAMBA
+    {"id": "50330", "local": "WCBW1T", "lat":-14.827411, "lon": 36.496501}, # CUAMBA
+    {"id": "50340", "local": "WCBW3T", "lat":-14.839806, "lon": 36.482766}, # CUAMBA
+    {"id": "50355", "local": "WCBW4T", "lat":-14.852642, "lon": 36.469251}, # CUAMBA
+
+
+    {"id": "505", "local": "WCWP", "lat":-14.853747, "lon": 36.466326}, # CUAMBA NEW
+    {"id": "515", "local": "WCWWCBA", "lat":-14.874933 , "lon": 36.432355}, # CUAMBA NEW
+    {"id": "520", "local": "WCWWCBB", "lat":-14.905448, "lon": 36.406551}, # CUAMBA NEW
+    {"id": "50320", "local": "WCWW1T", "lat":-14.916572, "lon": 36.361888}, # CUAMBA NEW
+    {"id": "50325", "local": "WCWW2T", "lat":-14.961269, "lon": 36.255330}, # CUAMBA NEW
+   
+    {"id": "470", "local": "WCAP", "lat":-14.968065, "lon":36.243838}, # CARONGA
+    {"id": "480", "local": "WCAWCWA", "lat":-14.977248, "lon":36.213347}, # CARONGA
+    {"id": "485", "local": "WCAWCWB", "lat":-14.975947, "lon":36.222767}, # CARONGA
+    {"id": "490", "local": "WCAWCWC", "lat":-14.986371, "lon":36.177914}, # CARONGA
+    {"id": "500", "local": "WCAWCWD", "lat": -14.996331, "lon":36.149301}, # CARONGA
+    {"id": "50295", "local": "WCAW1T", "lat":-15.012539, "lon": 36.124941}, # CARONGA
+    {"id": "50300", "local": "WCA2T", "lat": -15.022102, "lon": 36.086223}, # CARONGA
+    
+
+    {"id": "450", "local": "WTOP", "lat":-15.022669, "lon": 36.077694}, # TO-BUE
+    {"id": "460", "local": "WTOWCAA", "lat":-15.015160, "lon": 36.022148}, # TO-BUE
+    {"id": "465", "local": "WTOWCAB", "lat":-15.009583, "lon": 35.964396}, # TO-BUE
+    {"id": "50285", "local": "WTOW1T", "lat":-15.006713, "lon": 35.940950}, # TO-BUE
+    {"id": "50290", "local": "WTOW2T", "lat":-14.998917 , "lon": 35.904782}, # TO-BUE
+
+
+    {"id": "415", "local": "WELP", "lat":-14.991375, "lon": 35.893987}, # ENTRE LAGOS
+    {"id": "440", "local": "WELWTOA", "lat": -14.987480, "lon": 35.887395}, # ENTRE LAGOS
+    {"id": "445", "local": "WELWTOB", "lat":-14.982624, "lon": 35.879198}, # ENTRE LAGOS
+    {"id": "50250", "local": "WELW1T", "lat":-14.975338, "lon": 35.864074}, # ENTRE LAGOS
+    {"id": "50255", "local": "WELW3T", "lat":-14.969653, "lon": 35.849977}, # ENTRE LAGOS
+    {"id": "50260", "local": "WELW4T", "lat":-14.965980, "lon": 35.836661}, # ENTRE LAGOS
+    {"id": "50280", "local": "WELW2T", "lat":-14.962828, "lon": 35.824453}, # ENTRE LAGOS
+
+
+
+
+    {"id": "9", "local": "XNYWELB", "lat":-14.962937, "lon":35.823129}, # NAYUCI
+    {"id": "385", "local": "XNYP", "lat":-14.960115, "lon": 35.772578}, # NAYUCI
+    {"id": "410", "local": "XNYWELA", "lat": -14.959503, "lon":35.753614}, # NAYUCI
+    {"id": "50230", "local": "XNYW1T", "lat": -14.962060, "lon": 35.719326}, # NAYUCI
+    {"id": "50245", "local": "XNYW2T", "lat":-14.964199, "lon": 35.694756}, # NAYUCI
+  
+
+
+    {"id": "365", "local": "XNJP", "lat":-14.965768, "lon": 35.689131 }, # NAMANJA
+    {"id": "375", "local": "XNJXNYA", "lat":-14.972352, "lon": 35.657914}, # NAMANJA
+    {"id": "380", "local": "XNJXNYB", "lat":-14.973237 , "lon": 35.606777}, # NAMANJA
+    {"id": "50220", "local": "XNJW1T", "lat":-14.982665, "lon": 35.567728}, # NAMANJA
+    {"id": "50225", "local": "XNJW2T", "lat": -14.997544, "lon": 35.522145}, # NAMANJA
+
+    {"id": "340", "local": "XLAP", "lat":-14.999883, "lon": 35.516856}, # LAMBULILA
+    {"id": "355", "local": "XLAXNJA", "lat": -15.004484, "lon": 35.473592}, # LAMBULILA
+    {"id": "360", "local": "XLAXNJB", "lat": -15.020005, "lon": 35.429154}, # LAMBULILA
+    {"id": "50200", "local": "XLAW1T", "lat":-15.050549, "lon": 35.392930}, # LAMBULILA
+    {"id": "50215", "local": "XLAW2T", "lat": -15.052288, "lon": 35.328034}, # LAMBULILA
+
+
+    {"id": "315", "local": "XMWP", "lat":-15.055132, "lon": 35.321064}, # MOLIPA
+    {"id": "325", "local": "XMWXLAA", "lat": -15.054548, "lon": 35.307338}, # MOLIPA
+    {"id": "330", "local": "XMWXLAB", "lat": -15.056640, "lon": 35.291373}, # MOLIPA
+    {"id": "335", "local": "XMWXLAC", "lat": -15.060028, "lon": 35.270615}, # MOLIPA
+    {"id": "50190", "local": "XMWW1T", "lat":-15.063915 , "lon": 35.251920}, # MOLIPA
+    {"id": "50195", "local": "XMWW2T", "lat": -15.064601, "lon": 35.237027}, # MOLIPA
+
+
+    {"id": "265", "local": "XLWP", "lat": -15.063864, "lon": 35.233658}, # LIWONDE
+    {"id": "305", "local": "XLWXMWA", "lat":-15.071046, "lon": 35.193953}, # LIWONDE
+    {"id": "310", "local": "XLWXMWB", "lat": -15.080988, "lon": 35.166647}, # LIWONDE
+    {"id": "50140", "local": "XLWW1T", "lat":-15.086635, "lon": 35.147101}, # LIWONDE
+    {"id": "50150", "local": "XLWW3T", "lat":-15.093813, "lon": 35.125468}, # LIWONDE
+    {"id": "50175", "local": "XLWW4T", "lat":-15.100646, "lon": 35.106244}, # LIWONDE
+    {"id": "50180", "local": "XLWW2T", "lat":-15.111770, "lon": 35.080206}, # LIWONDE
+
+    {"id": "240", "local": "XNWP", "lat": -15.109689, "lon": 35.077250}, # NKAYA NEW
+    {"id": "250", "local": "XNWXLWA", "lat":-15.107041, "lon": 35.073128}, # NKAYA NEW
+    {"id": "255", "local": "XNWXLWB", "lat":-15.106188, "lon": 35.065343}, # NKAYA NEW
+    {"id": "260", "local": "XNWXLWC", "lat": -15.113591, "lon": 35.052057}, # NKAYA NEW
+    {"id": "50130", "local": "XNWW1T", "lat":-15.118863, "lon": 35.045517}, # NKAYA NEW
+    {"id": "50135", "local": "XNWW2T", "lat": -15.119886, "lon": 35.037286}, # NKAYA NEW
+    
+
+
+    {"id": "235", "local": "XNTXNW", "lat": -15.120123, "lon": 35.036548}, # NKAYA JUNCTION
+    {"id": "50125", "local": "XNTW1T", "lat":-15.204188, "lon": 34.954296}, # NKAYA JUNCTION
+  
+    {"id": "210", "local": "XL6P", "lat":-15.262248, "lon": 34.928802}, # LOOP 6 CL
+    {"id": "220", "local": "XL6XNTA", "lat":-15.289011, "lon": 34.917683}, # LOOP 6 CL
+    {"id": "225", "local": "XL6XNTB", "lat":-15.308907, "lon": 34.898314}, # LOOP 6 CL
+    {"id": "230", "local": "XL6XNTC", "lat": -15.310663, "lon": 34.891729}, # LOOP 6 CL
+    {"id": "50115", "local": "XL6W1T", "lat":-15.358982, "lon": 34.864628}, # LOOP 6 CL
+    {"id": "50120", "local": "XL6W2T", "lat": -15.385787, "lon": 34.848715}, # LOOP 6 CL
+
+
+    {"id": "4", "local": "XZAXL6A", "lat": -15.411509910165, "lon":34.8243404319391}, # FACILITIES ZALEWA
+    {"id": "6", "local": "XZAW1T", "lat": -15.412535, "lon": 34.822071}, # FACILITIES ZALEWA
+    {"id": "7", "local": "XZAW2T", "lat": -15.415670, "lon": 34.816683}, # FACILITIES ZALEWA
+    {"id": "205", "local": "XZAXL6B", "lat":-15.420398, "lon": 34.810637}, # FACILITIES ZALEWA
+    
+    
+    {"id": "185", "local": "XL5P", "lat": -15.4227564469314, "lon":34.8089932888488}, # LOOP 5 CL
+    {"id": "195", "local": "XL5XZAA", "lat":-15.444041, "lon": 34.792220}, # LOOP 5 CL
+    {"id": "200", "local": "XL5XZAB", "lat":-15.475741, "lon": 34.758440}, # LOOP 5 CL
+    {"id": "50105", "local": "XL5W1T", "lat":-15.512134, "lon": 34.721874}, # LOOP 5 CL
+    {"id": "50110", "local": "XL5W2T", "lat":-15.543006, "lon": 34.680472}, # LOOP 5 CL
+
+    {"id": "160", "local": "XL4P", "lat": -15.5629497804683, "lon":34.6678802631617}, # LOOP 4 CL
+    {"id": "170", "local": "XL4XL5A", "lat": -15.589116, "lon": 34.640521}, # LOOP 4 CL
+    {"id": "175", "local": "XL4XL5B", "lat":-15.621767, "lon": 34.611555}, # LOOP 4 CL
+    {"id": "180", "local": "XL4XL5C", "lat":-15.650991, "lon": 34.550998}, # LOOP 4 CL
+    {"id": "50095", "local": "XL4W1T", "lat":-15.710740, "lon": 34.522648}, # LOOP 4 CL
+    {"id": "50100", "local": "XL4W2T", "lat":-15.764191, "lon": 34.493239}, # LOOP 4 CL
+
+    {"id": "105", "local": "XL3P", "lat":-15.770906, "lon": 34.490816}, # LOOP 3 CL
+    {"id": "140", "local": "XL3XL4A", "lat":-15.790163, "lon": 34.481218}, # LOOP 3 CL 
+    {"id": "145", "local": "XL3XL4B", "lat": -15.805397, "lon": 34.456430}, # LOOP 3 CL
+    {"id": "150", "local": "XL3XL4C", "lat":-15.811192, "lon": 34.429843}, # LOOP 3 CL
+    {"id": "155", "local": "XL3XL4D", "lat":-15.823531, "lon": 34.398662}, # LOOP 3 CL
+    {"id": "50055", "local": "XL3W1T", "lat":-15.819891, "lon": 34.354121}, # LOOP 3 CL
+    {"id": "50090", "local": "XL3W2T", "lat":-15.817426, "lon": 34.304692}, # LOOP 3 CL
+ 
+ 
+    {"id": "75", "local": "XL2P", "lat": -15.8197868392766, "lon":34.2810857141549}, # LOOP 2 CL
+    {"id": "85", "local": "XL2XL3A", "lat":-15.849381, "lon": 34.243381}, # LOOP 2 CL
+    {"id": "90", "local": "XL2XL3B", "lat": -15.869945, "lon": 34.189507}, # LOOP 2 CL
+    {"id": "95", "local": "XL2XL3C", "lat":-15.887151, "lon": 34.134961}, # LOOP 2 CL
+    {"id": "100", "local": "XL2XL3D", "lat":-15.915874, "lon": 34.089737}, # LOOP 2 CL
+    {"id": "50045", "local": "XL2W1T", "lat":-15.946431, "lon": 34.050878}, # LOOP 2 CL
+    {"id": "50050", "local": "XL2W2T", "lat":-15.971837, "lon": 34.003305}, # LOOP 2 CL
+
+    {"id": "1", "local": "WL1W3T", "lat":-15.978821, "lon": 33.997530}, # LOOP 1 CL
+    {"id": "2", "local": "WL131", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "30", "local": "WL111", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "35", "local": "WL121", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL        
+    {"id": "55", "local": "WL1XL2A", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "60", "local": "WL1WL2B", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "65", "local": "WL1XL2C", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "70", "local": "WL1XL2D", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL 
+    {"id": "50010", "local": "WL1W1T", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "50015", "local": "WL1W4T", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+    {"id": "50040", "local": "WL1W2T", "lat": -15.9783404816619, "lon":33.9974187369633}, # LOOP 1 CL
+   
+
+
     {"id": "5", "local": "RMVWL1A", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
+    {"id": "10", "local": "RMVWL1B", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
+    {"id": "15", "local": "RMVWL1C", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
+    {"id": "20", "local": "RMVWL1D", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
+    {"id": "33", "local": "RMVP", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
+    {"id": "112", "local": "RMVWVT", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
+
+
+
+
+
     {"id": "9", "local": "", "lat": -16.1633783146919, "lon":33.7954033704417} # MINA
 ]
