@@ -4,3 +4,6 @@ shapely
 setuptools
 lxml
 openpyxl
+requests
+flask
+flask_restful
