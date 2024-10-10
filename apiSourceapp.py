@@ -10,16 +10,23 @@ def update_positions():
     """
     Endpoint para receber dados enviados do script local.
     """
+    global positions_data  # Declare a variável como global
     try:
         # Receber dados JSON enviados pelo script local
-	data = request.get_json()
-        print(f'Dados recebidos: {data}')
-	if data:
-	    positions_data = {}
-            positions_data.update(data)  # Atualizar dados armazenados
+        data = request.get_json()
+        
+        # Zera os dados existentes antes de inserir os novos
+        positions_data = {}
+
+        if data:
+            # Atualiza positions_data com os dados recebidos
+            positions_data = data
             return jsonify({"message": "Dados recebidos e atualizados com sucesso"}), 200
-        return jsonify({"message": "Nenhum dado recebido"}), 400
+        else:
+            return jsonify({"message": "Nenhum dado recebido"}), 400
+
     except Exception as e:
+        print(f'Erro interno: {e}')  # Log do erro para depuração
         return jsonify({"message": f"Erro: {e}"}), 500
 
 @app.route('/', methods=['GET'])
