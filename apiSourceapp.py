@@ -14,7 +14,6 @@ def update_positions():
     try:
         # Receber dados JSON enviados pelo script local
         data = request.get_json()
-        print(f'Dados recebidos: {data}')
         
         # Zera os dados existentes antes de inserir os novos
         positions_data = {}
@@ -39,4 +38,3 @@ def get_locomotives():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-
