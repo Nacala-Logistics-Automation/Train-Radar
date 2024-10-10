@@ -1,8 +1,8 @@
-from flask import Flask, render_template, jsonify
 import pandas as pd
 import random
 import json
 from draw.railway import railway_line  # Importando a linha ferroviária
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
@@ -30,11 +30,11 @@ def data():
 
     # Correlacionando as posições dos trens com os IDs das coordenadas
     for train in trains_data:
-        position = get_position_on_line(train['coord_id'], railway_line)
+        position = get_position_on_line(train['id_bloco'], railway_line)
         train['latitude'] = position['lat']
         train['longitude'] = position['lon']
 
     return jsonify(trains_data)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=80)
+    app.run(host='0.0.0.0', port=8080)

@@ -5,3 +5,5 @@ setuptools
 lxml
 openpyxl
 flask
+requests
+jsonify
