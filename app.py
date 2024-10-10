@@ -17,7 +17,7 @@ def get_position_on_line(coord_id, line):
     for point in line:
         if point['id'] == coord_id:
             return point
-#    return line[0]  # Se o ID não for encontrado, retorna o ponto inicial
+    return line[0]  # Se o ID não for encontrado, retorna o ponto inicial
 
 @app.route('/')
 def index():

@@ -4,6 +4,10 @@ shapely
 setuptools
 lxml
 openpyxl
+<<<<<<< HEAD
 requests
 flask
 flask_restful
+=======
+flask
+>>>>>>> dev

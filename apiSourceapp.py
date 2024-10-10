@@ -14,6 +14,10 @@ def update_positions():
     try:
         # Receber dados JSON enviados pelo script local
         data = request.get_json()
+<<<<<<< HEAD
+=======
+        print(f'Dados recebidos: {data}')
+>>>>>>> dev
         
         # Zera os dados existentes antes de inserir os novos
         positions_data = {}

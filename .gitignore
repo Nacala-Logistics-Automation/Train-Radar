@@ -1,3 +1,9 @@
 **/venv/
 **/__pycache__/
+<<<<<<< HEAD
 **/radarvenv
+=======
+**/draw/Mapeamento Posicoes.xlsx
+**/draw/~$Mapeamento Posicoes.xlsx
+**/radarvenv/
+>>>>>>> dev
