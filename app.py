@@ -41,7 +41,6 @@ def data():
 
     # Correlacionando as posições dos trens com os IDs das coordenadas
     for train in trains_data:
-        print(train['id_bloco'])
         position = get_position_on_line(train['id_bloco'], railway_line)
         train['latitude'] = position['lat']
         train['longitude'] = position['lon']
