@@ -11,7 +11,7 @@ app = Flask(__name__)
 def read_trains_data():
     try:
         # Substitua a URL pela URL correta da sua API externa
-        response = requests.get('http://98.88.198.121:5000')
+        response = requests.get('http://98.83.198.121:5000')
         # Verifica se a requisição foi bem-sucedida
         if response.status_code == 200:
             data = response.json()  # Converte a resposta para formato JSON
@@ -41,6 +41,7 @@ def data():
 
     # Correlacionando as posições dos trens com os IDs das coordenadas
     for train in trains_data:
+        print(train['id_bloco'])
         position = get_position_on_line(train['id_bloco'], railway_line)
         train['latitude'] = position['lat']
         train['longitude'] = position['lon']

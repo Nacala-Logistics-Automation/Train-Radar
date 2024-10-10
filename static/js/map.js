@@ -32,16 +32,16 @@ function createTrainIcon(train_id) {
 function updateMarkers() {
     $.getJSON('/data', function(data) {
         data.forEach(function(train) {
-            var key = train.train_id;
+            var key = train.prefixo;
 
             if (markers[key]) {
                 // Atualiza a posição do marcador existente com uma transição suave
                 markers[key].setLatLng([train.latitude, train.longitude], { animate: true, duration: 1.5 })
-                    .setPopupContent("Train ID: " + train.train_id + "<br>Local: " + train.local + "<br>Coord ID: " + train.coord_id);
+                    .setPopupContent("Train ID: " + train.prefixo + "<br>Local: " + train.bloco + "<br>Coord ID: " + train.id_bloco);
             } else {
                 // Cria um novo marcador
-                var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.train_id)})
-                    .bindPopup("Train ID: " + train.train_id + "<br>Status: " + train.status + "<br>Coord ID: " + train.coord_id)
+                var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.prefixo)})
+                    .bindPopup("Train ID: " + train.prefixo + "<br>Ocupação: " + train.data_ocupacao + "<br>Coord ID: " + train.id_bloco)
                     .addTo(map);
                 markers[key] = marker;
             }
