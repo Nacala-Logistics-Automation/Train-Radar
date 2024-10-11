@@ -34,16 +34,19 @@ function updateMarkers() {
         data.forEach(function(train) {
             var key = train.prefixo;
 
-            if (markers[key]) {
-                // Atualiza a posição do marcador existente com uma transição suave
-                markers[key].setLatLng([train.latitude, train.longitude], { animate: true, duration: 1.5 })
-                    .setPopupContent("Train ID: " + train.prefixo + "<br>Local: " + train.bloco + "<br>Coord ID: " + train.id_bloco);
-            } else {
-                // Cria um novo marcador
-                var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.prefixo)})
-                    .bindPopup("Train ID: " + train.prefixo + "<br>Ocupação: " + train.data_ocupacao + "<br>Coord ID: " + train.id_bloco)
-                    .addTo(map);
-                markers[key] = marker;
+            // Verificar se o prefixo começa com 'k' (opcional, conforme necessidade)
+            if (key[0].toLowerCase() === 'k') {
+                if (markers[key]) {
+                    // Atualiza a posição do marcador existente com transição suave
+                    markers[key].setLatLng([train.latitude, train.longitude], { animate: true, duration: 1.5 })
+                        .setPopupContent("Train ID: " + train.prefixo + "<br>Local: " + train.bloco + "<br>Coord ID: " + train.id_bloco);
+                } else {
+                    // Cria um novo marcador
+                    var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.prefixo)})
+                        .bindPopup("Train ID: " + train.prefixo + "<br>Ocupação: " + train.data_ocupacao + "<br>Coord ID: " + train.id_bloco)
+                        .addTo(map);
+                    markers[key] = marker;
+                }
             }
         });
     });
