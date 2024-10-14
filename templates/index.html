@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Train Tracker</title>
+    <title>EE - Train Tracker</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -35,7 +35,8 @@
 <body>
     <h1>Train Tracker</h1>
     
-    <!-- Botão de logout no canto superior direito -->
+    <!-- Botão para mostrar/ocultar torres -->
+    <button id="toggleTowers">Mostrar Sites</button>
     <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
 
     <div id="map" style="width: 100%; height: 600px;"></div>
