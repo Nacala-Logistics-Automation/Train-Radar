@@ -12,6 +12,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.min.js"></script>
     <style>
         /* Estilo para o botão de logout no canto superior direito */
+        .custom-popup .leaflet-popup-content-wrapper {
+            background-color: rgba(255, 255, 255, 0.664); /* Fundo branco com 80% de opacidade */
+            color: rgb(51, 59, 129); /* Cor do texto */
+            border-radius: 10px;
+        }
+
+        .custom-popup .leaflet-popup-tip {
+            background-color: rgba(255, 255, 255, 0.664); /* O pequeno triângulo do popup */
+        }
         .logout-button {
             position: absolute;
             top: 10px;

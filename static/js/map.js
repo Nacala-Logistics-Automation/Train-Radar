@@ -117,7 +117,7 @@ function createTowerIcon(towerName) {
 // Adiciona torres ao mapa e armazena os marcadores, mas mantém as torres ocultas inicialmente
 towers.forEach(function(tower) {
     var marker = L.marker([tower.lat, tower.lon], {icon: createTowerIcon(tower.name)})
-        .bindPopup("Block: " + tower.name);
+        .bindPopup("Site: " + tower.name);
     towerMarkers.push(marker);
     // As torres são criadas, mas não são adicionadas ao mapa
 });
@@ -133,11 +133,12 @@ function updateMarkers() {
                 if (markers[key]) {
                     // Atualiza a posição do marcador existente
                     markers[key].setLatLng([train.latitude, train.longitude], { animate: true, duration: 1.5 })
-                        .setPopupContent("Block: " + train.bloco + "<br>Start Km: " + train.km_ini + "<br>End Km: " + train.km_fim);
+                        .setPopupContent("Block: " + train.bloco + "<br>Start Km: " + train.km_fim + "<br>End Km: " + train.km_ini, { className: 'custom-popup' })
+                        .getPopup().options.className = 'custom-popup';
                 } else {
                     // Cria um novo marcador
                     var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.prefixo)})
-                        .bindPopup("Block: " + train.bloco + "<br>Start Km: " + train.km_ini + "<br>End Km: " + train.km_fim)
+                        .bindPopup("Block: " + train.bloco + "<br>Start Km: " + train.km_fim + "<br>End Km: " + train.km_ini, { className: 'custom-popup' })
                         .addTo(map);
                     markers[key] = marker;
                 }
@@ -145,6 +146,7 @@ function updateMarkers() {
         });
     });
 }
+
 
 // Função para alternar a visibilidade das torres e atualizar o texto do botão
 var towersVisible = false; // Inicia com as torres ocultas
