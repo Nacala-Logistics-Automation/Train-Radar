@@ -85,7 +85,7 @@ def login():
             login_user(user)
             return redirect(url_for('index'))
         else:
-            flash('Nome de usuário ou senha incorretos.', 'danger')
+            flash('Name or Password Incorrect.', 'danger')
 
     return render_template('login.html')
 
@@ -93,8 +93,8 @@ def login():
 @login_required
 def logout():
     logout_user()
-    flash('Você foi desconectado.', 'success')
+    flash('You are disconnected.', 'success')
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8080)

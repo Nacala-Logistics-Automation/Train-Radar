@@ -14,8 +14,8 @@ main.addTo(map);
 
 // Adiciona um controle para alternar entre as camadas
 var baseMaps = {
-    "Mapa v1.1": main,
-    "Mapa v1.0": terrainLayer
+    "Map v1.1": main,
+    "Map v1.0": terrainLayer
 };
 L.control.layers(baseMaps).addTo(map);
 
@@ -117,7 +117,7 @@ function createTowerIcon(towerName) {
 // Adiciona torres ao mapa e armazena os marcadores, mas mantém as torres ocultas inicialmente
 towers.forEach(function(tower) {
     var marker = L.marker([tower.lat, tower.lon], {icon: createTowerIcon(tower.name)})
-        .bindPopup("Nome do Site: " + tower.name);
+        .bindPopup("Block: " + tower.name);
     towerMarkers.push(marker);
     // As torres são criadas, mas não são adicionadas ao mapa
 });
@@ -133,11 +133,11 @@ function updateMarkers() {
                 if (markers[key]) {
                     // Atualiza a posição do marcador existente
                     markers[key].setLatLng([train.latitude, train.longitude], { animate: true, duration: 1.5 })
-                        .setPopupContent("Train ID: " + train.prefixo + "<br>Local: " + train.bloco + "<br>Coord ID: " + train.id_bloco);
+                        .setPopupContent("Block: " + train.bloco + "<br>Start Km: " + train.km_ini + "<br>End Km: " + train.km_fim);
                 } else {
                     // Cria um novo marcador
                     var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.prefixo)})
-                        .bindPopup("Train ID: " + train.prefixo + "<br>Ocupação: " + train.data_ocupacao + "<br>Coord ID: " + train.id_bloco)
+                        .bindPopup("Block: " + train.bloco + "<br>Start Km: " + train.km_ini + "<br>End Km: " + train.km_fim)
                         .addTo(map);
                     markers[key] = marker;
                 }
@@ -155,12 +155,12 @@ document.getElementById("toggleTowers").addEventListener("click", function() {
         towerMarkers.forEach(function(marker) {
             map.addLayer(marker);  // Mostra as torres
         });
-        document.getElementById("toggleTowers").innerText = "Ocultar Sites";  // Atualiza o texto do botão
+        document.getElementById("toggleTowers").innerText = "Hide Locations";  // Atualiza o texto do botão
     } else {
         towerMarkers.forEach(function(marker) {
             map.removeLayer(marker);  // Oculta as torres
         });
-        document.getElementById("toggleTowers").innerText = "Mostrar Sites";  // Atualiza o texto do botão
+        document.getElementById("toggleTowers").innerText = "Show Locations";  // Atualiza o texto do botão
     }
 });
 
