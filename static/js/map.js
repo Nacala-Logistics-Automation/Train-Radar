@@ -176,12 +176,12 @@ function createAtivoIcon(ativoName, status) {
     return L.divIcon({
         html: `
             <div style="text-align: center;">
-                <i class="fa-solid fa-heading" style="color: ${color}; font-size: 20px;"></i>
+                <i class="fa-solid fa-heading" style="color: ${color}; font-size: 10px;"></i><i class="fa-solid fa-heading" style="color: ${color}; font-size: 10px;"></i>
                 <div style="padding: 4px; border-radius: 4px; font-size: 9px; color: rgba(0, 0, 0, 0.6);">HBHW<br>${ativoName}</div>
             </div>
         `,
         className: 'ativo-icon',
-        iconSize: [25, 25], // Tamanho do ícone
+        iconSize: [60, 30], // Tamanho do ícone
         iconAnchor: [30, -4] // Posição do ícone
     });
 }
