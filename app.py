@@ -9,6 +9,20 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 app = Flask(__name__)
 app.secret_key = 'EIEIROW2003204J32O2SO3E2K3434530O0R'  # Chave secreta para gerenciamento de sessão
 
+# Mapeamento de nomes e coordenadas para cada IP
+ip_mapping = {
+    "12.12.120.210": {"name": "Loop2<br>Loop3", "lat": -15.823275, "lon": 34.404031},
+    "12.12.120.209": {"name": "Loop6<br>Zalewa", "lat": -15.333761, "lon": 34.870483},
+    "12.12.120.208": {"name": "Molipa<br>Lambulila", "lat": -15.050083, "lon": 35.393167},
+    "12.12.120.207": {"name": "Caronga<br>Tóbue", "lat": -15.003522, "lon": 36.138242},
+    "12.12.120.206": {"name": "Murissa<br>Lúrio", "lat": -14.799725, "lon": 36.786500},
+    "12.12.120.205": {"name": "Malema New<br>Nataleia", "lat": -14.927942, "lon": 37.496081},
+    "12.12.120.204": {"name": "Outeiro<br>Iapala", "lat": -15.040847, "lon": 38.135464},
+    "12.12.120.203": {"name": "Caramaja<br>Namina", "lat": -14.914528, "lon": 38.756850},
+    "12.12.120.202": {"name": "Anchilo<br>Muizia", "lat": -15.097806, "lon": 39.452244},
+    "12.12.120.201": {"name": "Evate<br>Metocheria", "lat": -14.899569, "lon": 40.177997},
+}
+
 # Configuração do Flask-Login
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -45,6 +59,22 @@ def read_trains_data():
         print(f"Erro ao fazer a requisição: {e}")
         return []
 
+# Função para simular leitura do JSON com dados dos trens
+def read_hbhw_data():
+    try:
+        # Substitua a URL pela URL correta da sua API externa
+        response = requests.get('http://98.83.198.121:5000/hbhw')
+        # Verifica se a requisição foi bem-sucedida
+        if response.status_code == 200:
+            data = response.json()  # Converte a resposta para formato JSON
+            return data
+        else:
+            print(f"Erro ao acessar a API: {response.status_code}")
+            return []
+    except Exception as e:
+        print(f"Erro ao fazer a requisição: {e}")
+        return []
+
 def get_position_on_line(coord_id, line):
     """Obtém a posição na linha baseada no ID da coordenada."""
     for point in line:
@@ -57,7 +87,31 @@ def get_position_on_line(coord_id, line):
 def index():
     return render_template('index.html')
 
-@app.route('/data')
+@app.route('/hbhw', methods=['POST'])
+@login_required  # Protegendo a rota
+def hbhw():
+    # Lendo os dados do corpo da requisição
+    data = read_hbhw_data()
+
+    # Criando uma lista para armazenar os resultados
+    result = []
+
+    # Verificando o status e adicionando as informações correspondentes
+    for item in data:
+        ip = item["ip"]
+        if ip in ip_mapping:  # Verifica se o IP está no mapeamento
+            mapping = ip_mapping[ip]
+            result.append({
+                "ip": ip,  # Mantém o IP original
+                "status": item["status"],  # Mantém o status original
+                "name": mapping["name"],  # Nome do mapeamento
+                "lat": mapping["lat"],  # Latitude do mapeamento
+                "lon": mapping["lon"]   # Longitude do mapeamento
+            })
+
+    return jsonify(result)
+
+@app.route('/positions')
 @login_required  # Protegendo a rota
 def data():
     # Lendo os dados dos trens
