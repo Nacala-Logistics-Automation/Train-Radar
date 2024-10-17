@@ -7,7 +7,7 @@ import requests
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 app = Flask(__name__)
-app.secret_key = 'seu_segredo_aqui'  # Chave secreta para gerenciamento de sessão
+app.secret_key = 'EIEIROW2003204J32O2SO3E2K3434530O0R'  # Chave secreta para gerenciamento de sessão
 
 # Configuração do Flask-Login
 login_manager = LoginManager()

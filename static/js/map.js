@@ -166,6 +166,47 @@ document.getElementById("toggleTowers").addEventListener("click", function() {
     }
 });
 
+// Lista de ativos com coordenadas
+var hbhw = [
+    { name: 'Loop2<br>Loop3', lat: -15.823275, lon: 34.404031 },
+    { name: 'Loop6<br>Zalewa', lat: -15.333761, lon: 34.870483 },
+    { name: 'Molipa<br>Lambulila', lat: -15.050083, lon: 35.393167 },
+    { name: 'Caronga<br>Tóbue', lat: -15.003522, lon: 36.138242 },
+    { name: 'Murissa<br>Lúrio', lat: -14.799725, lon: 36.786500 },
+    { name: 'Malema New<br>Nataleia', lat: -14.927942, lon: 37.496081 },
+    { name: 'Outeiro<br>Iapala', lat: -15.040847, lon: 38.135464 },
+    { name: 'Caramaja<br>Namina', lat: -14.914528, lon: 38.756850 },
+    { name: 'Anchilo<br>Muizia', lat: -15.097806, lon: 39.452244 },
+    { name: 'Evate<br>Metocheria', lat: -14.899569, lon: 40.177997 }
+];
+
+// Função para criar ícone de ativo
+function createAtivoIcon(ativoName) {
+    return L.divIcon({
+        html: `
+            <div style="text-align: center;">
+                <i class="fa-solid fa-bolt" style="color: rgba(0, 0, 255, 0.5); font-size: 24px;"></i>
+                <div style="padding: 4px; border-radius: 4px; font-size: 9px; color: rgba(0, 0, 0, 0.6);">HBHW<br>${ativoName}</div>
+            </div>
+        `,
+        className: 'ativo-icon',
+        iconSize: [60, 30], // Tamanho do ícone
+        iconAnchor: [30, -4] // Posição do ícone
+    });
+}
+
+// Variável para armazenar marcadores dos ativos
+var hbhwMarkers = [];
+
+// Adiciona os ativos ao mapa
+hbhw.forEach(function(hbhw) {
+    var marker = L.marker([hbhw.lat, hbhw.lon], {icon: createAtivoIcon(hbhw.name)})
+        //.bindPopup("HBHW: " + hbhw.name);
+        hbhwMarkers.push(marker);
+    marker.addTo(map);  // Adiciona o ativo ao mapa
+});
+
+
 // Atualiza marcadores a cada 5 segundos
 updateMarkers();
 setInterval(updateMarkers, 5000);
