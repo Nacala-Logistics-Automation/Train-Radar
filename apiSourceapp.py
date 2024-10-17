@@ -30,7 +30,7 @@ def update_positions():
         print(f'Erro interno: {e}')  # Log do erro para depuração
         return jsonify({"message": f"Erro: {e}"}), 500
 
-@app.route('/update_wbhw', methods=['POST'])
+@app.route('/update_hbhw', methods=['POST'])
 def update_hbhw():
     """
     Endpoint para receber dados enviados do script local.
