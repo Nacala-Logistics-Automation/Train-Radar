@@ -176,7 +176,7 @@ function createAtivoIcon(ativoName, status) {
     return L.divIcon({
         html: `
             <div style="text-align: center;">
-                <i class="fa-solid fa-bolt" style="color: ${color}; font-size: 24px;"></i>
+                <i class="fa-solid fa-heading" style="color: ${color}; font-size: 24px;"></i>
                 <div style="padding: 4px; border-radius: 4px; font-size: 9px; color: rgba(0, 0, 0, 0.6);">HBHW<br>${ativoName}</div>
             </div>
         `,
