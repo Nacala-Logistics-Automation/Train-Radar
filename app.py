@@ -11,16 +11,16 @@ app.secret_key = 'EIEIROW2003204J32O2SO3E2K3434530O0R'  # Chave secreta para ger
 
 # Mapeamento de nomes e coordenadas para cada IP
 ip_mapping = {
-    "12.12.120.210": {"name": "Loop2<br>Loop3", "lat": -15.823275, "lon": 34.404031},
-    "12.12.120.209": {"name": "Loop6<br>Zalewa", "lat": -15.333761, "lon": 34.870483},
-    "12.12.120.208": {"name": "Molipa<br>Lambulila", "lat": -15.050083, "lon": 35.393167},
-    "12.12.120.207": {"name": "Caronga<br>Tóbue", "lat": -15.003522, "lon": 36.138242},
-    "12.12.120.206": {"name": "Murissa<br>Lúrio", "lat": -14.799725, "lon": 36.786500},
-    "12.12.120.205": {"name": "Malema New<br>Nataleia", "lat": -14.927942, "lon": 37.496081},
-    "12.12.120.204": {"name": "Outeiro<br>Iapala", "lat": -15.040847, "lon": 38.135464},
-    "12.12.120.203": {"name": "Caramaja<br>Namina", "lat": -14.914528, "lon": 38.756850},
-    "12.12.120.202": {"name": "Anchilo<br>Muizia", "lat": -15.097806, "lon": 39.452244},
-    "12.12.120.201": {"name": "Evate<br>Metocheria", "lat": -14.899569, "lon": 40.177997},
+    "12.12.120.201": {"name": "Loop2<br>Loop3", "lat": -15.823275, "lon": 34.404031},
+    "12.12.120.202": {"name": "Loop6<br>Zalewa", "lat": -15.333761, "lon": 34.870483},
+    "12.12.120.203": {"name": "Molipa<br>Lambulila", "lat": -15.050083, "lon": 35.393167},
+    "12.12.120.204": {"name": "Caronga<br>Tóbue", "lat": -15.003522, "lon": 36.138242},
+    "12.12.120.205": {"name": "Murissa<br>Lúrio", "lat": -14.799725, "lon": 36.786500},
+    "12.12.120.206": {"name": "Malema New<br>Nataleia", "lat": -14.927942, "lon": 37.496081},
+    "12.12.120.207": {"name": "Outeiro<br>Iapala", "lat": -15.040847, "lon": 38.135464},
+    "12.12.120.208": {"name": "Caramaja<br>Namina", "lat": -14.914528, "lon": 38.756850},
+    "12.12.120.209": {"name": "Anchilo<br>Muizia", "lat": -15.097806, "lon": 39.452244},
+    "12.12.120.210": {"name": "Evate<br>Metocheria", "lat": -14.899569, "lon": 40.177997},
 }
 
 # Configuração do Flask-Login
