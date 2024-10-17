@@ -87,8 +87,7 @@ def get_position_on_line(coord_id, line):
 def index():
     return render_template('index.html')
 
-@app.route('/hbhw', methods=['POST'])
-@login_required  # Protegendo a rota
+@app.route('/hbhw')
 def hbhw():
     # Lendo os dados do corpo da requisição
     data = read_hbhw_data()
@@ -111,7 +110,7 @@ def hbhw():
 
     return jsonify(result)
 
-@app.route('/positions')
+@app.route('/data')
 @login_required  # Protegendo a rota
 def data():
     # Lendo os dados dos trens

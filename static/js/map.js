@@ -124,7 +124,7 @@ towers.forEach(function(tower) {
 
 // Função para atualizar os marcadores dos trens
 function updateMarkers() {
-    $.getJSON('/positions', function(data) {
+    $.getJSON('/data', function(data) {
         data.forEach(function(train) {
             var key = train.prefixo;
 
@@ -166,6 +166,9 @@ document.getElementById("toggleTowers").addEventListener("click", function() {
     }
 });
 
+// Variável para armazenar marcadores dos ativos
+var hbhwMarkers = [];
+
 // Função para criar ícone de ativo
 function createAtivoIcon(ativoName, status) {
     const color = status === 'ok' ? 'green' : 'red'; // Verde para 'ok', vermelho para 'nok'
@@ -183,29 +186,24 @@ function createAtivoIcon(ativoName, status) {
     });
 }
 
-// Variável para armazenar marcadores dos ativos
-var hbhwMarkers = [];
-
 // Função para buscar os dados da rota Flask
 function fetchHBHWData() {
-    fetch('/hbhw', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            // Adicione outros cabeçalhos se necessário, como token de autenticação
-        },
-        body: JSON.stringify({}) // Adicione dados ao corpo da requisição, se necessário
-    })
-    .then(response => response.json())
-    .then(data => {
+    $.getJSON('/hbhw', function(data) {
+        // Remove marcadores antigos se necessário
+        hbhwMarkers.forEach(function(marker) {
+            map.removeLayer(marker); // Remove o marcador do mapa
+        });
+        hbhwMarkers = []; // Limpa a lista de marcadores
+
         // Adiciona os ativos ao mapa
         data.forEach(function(hbhw) {
             var marker = L.marker([hbhw.lat, hbhw.lon], {icon: createAtivoIcon(hbhw.name, hbhw.status)});
             hbhwMarkers.push(marker);
             marker.addTo(map);  // Adiciona o ativo ao mapa
         });
-    })
-    .catch(error => console.error('Erro ao buscar dados:', error));
+    }).fail(function(error) {
+        console.error('Erro ao buscar dados:', error);
+    });
 }
 
 // Chama a função para buscar os dados
