@@ -393,78 +393,78 @@ railway_line = [
 
 
     {"id": "410", "local": "XNYWELA", "lat":-14.962937, "lon":35.823129}, # NAYUCI
-    {"id": "50245", "local": "XNYW2T", "lat":-14.960115, "lon": 35.772578}, # NAYUCI
-    {"id": "50240", "local": "XNYW4T", "lat": -14.959503, "lon":35.753614}, # NAYUCI
-    {"id": "405", "local": "XNY22", "lat": -14.962060, "lon": 35.719326}, # NAYUCI
-    {"id": "395", "local": "XNY21", "lat":-0, "lon": 0},
-    {"id": "400", "local": "XNY12", "lat":-0, "lon": 0},
-    {"id": "50235", "local": "XNYW3T", "lat":-0, "lon": 0},
-    {"id": "385", "local": "XNYP", "lat":-0, "lon": 0},
-    {"id": "390", "local": "XNY11", "lat":-0, "lon": 0},
-    {"id": "50230", "local": "XNYW1T", "lat":-14.964199, "lon": 35.694756}, # NAYUCI
-    {"id": "9", "local": "XNYWELB", "lat":-0, "lon": 0},
+    {"id": "50245", "local": "XNYW2T", "lat":-14.961705, "lon": 35.815970}, # NAYUCI
+    {"id": "50240", "local": "XNYW4T", "lat":-14.961273, "lon": 35.804936}, # NAYUCI
+    {"id": "405", "local": "XNY22", "lat":-14.960995, "lon": 35.793574}, # NAYUCI
+    {"id": "395", "local": "XNY21", "lat":-14.959798, "lon": 35.782795},
+    {"id": "400", "local": "XNY12", "lat":-14.959200, "lon": 35.770079},
+    {"id": "50235", "local": "XNYW3T", "lat":-14.959568, "lon": 35.753310 },
+    {"id": "385", "local": "XNYP", "lat":-14.959980, "lon": 35.736931},
+    {"id": "390", "local": "XNY11", "lat":-14.961458, "lon": 35.720729},
+    {"id": "50230", "local": "XNYW1T", "lat":-14.963097, "lon": 35.706952}, # NAYUCI
+    {"id": "9", "local": "XNYWELB", "lat":-14.964199, "lon": 35.694756},
 
 
     {"id": "380", "local": "XNJXNYB", "lat":-14.965768, "lon": 35.689131 }, # NAMANJA
     {"id": "375", "local": "XNJXNYA", "lat":-14.972352, "lon": 35.657914}, # NAMANJA
-    {"id": "50225", "local": "XNJW2T", "lat":-14.973237 , "lon": 35.606777}, # NAMANJA
-    {"id": "365", "local": "XNJP", "lat":-14.982665, "lon": 35.567728}, # NAMANJA
-    {"id": "370", "local": "XNJ1", "lat":-0, "lon": 0},
-    {"id": "50220", "local": "XNJW1T", "lat": -14.997544, "lon": 35.522145}, # NAMANJA
+    {"id": "50225", "local": "XNJW2T", "lat":-14.973922, "lon": 35.616413}, # NAMANJA
+    {"id": "365", "local": "XNJP", "lat":-14.979301, "lon": 35.582201}, # NAMANJA
+    {"id": "370", "local": "XNJ1", "lat":-14.988898, "lon": 35.546802},
+    {"id": "50220", "local": "XNJW1T", "lat":-14.996988, "lon": 35.524803}, # NAMANJA
 
     {"id": "360", "local": "XLAXNJB", "lat":-14.999883, "lon": 35.516856}, # LAMBULILA
-    {"id": "355", "local": "XLAXNJA", "lat": -15.004484, "lon": 35.473592}, # LAMBULILA
-    {"id": "50215", "local": "XLAW2T", "lat": -15.020005, "lon": 35.429154}, # LAMBULILA
-    {"id": "8", "local": "XLA21", "lat":-0, "lon": 0},
-    {"id": "50210", "local": "XLAW4T", "lat":-0, "lon": 0},
-    {"id": "350", "local": "XLA2", "lat":-0, "lon": 0},
-    {"id": "345", "local": "XLA11", "lat":-0, "lon": 0},
-    {"id": "340", "local": "XLAP", "lat":-15.050549, "lon": 35.392930}, # LAMBULILA
-    {"id": "50205", "local": "XLAW3T", "lat":-0, "lon": 0},
-    {"id": "50200", "local": "XLAW1T", "lat": -15.052288, "lon": 35.328034}, # LAMBULILA
+    {"id": "355", "local": "XLAXNJA", "lat":-14.999151, "lon": 35.496256}, # LAMBULILA
+    {"id": "50215", "local": "XLAW2T", "lat":-15.003029, "lon": 35.475298}, # LAMBULILA
+    {"id": "8", "local": "XLA21", "lat":-14.997665, "lon": 35.455164},
+    {"id": "50210", "local": "XLAW4T", "lat":-15.011913, "lon": 35.438591},
+    {"id": "350", "local": "XLA2", "lat":-15.028586, "lon": 35.419961},
+    {"id": "345", "local": "XLA11", "lat":-15.044464, "lon": 35.406569},
+    {"id": "340", "local": "XLAP", "lat":-15.052130, "lon": 35.386015}, # LAMBULILA
+    {"id": "50205", "local": "XLAW3T", "lat":-15.050526, "lon": 35.354274},
+    {"id": "50200", "local": "XLAW1T", "lat":-15.052288, "lon": 35.328034}, # LAMBULILA
 
 
     {"id": "335", "local": "XMWXLAC", "lat":-15.055132, "lon": 35.321064}, # MOLIPA
     {"id": "330", "local": "XMWXLAB", "lat": -15.054548, "lon": 35.307338}, # MOLIPA
     {"id": "325", "local": "XMWXLAA", "lat": -15.056640, "lon": 35.291373}, # MOLIPA
     {"id": "50195", "local": "XMWW2T", "lat": -15.060028, "lon": 35.270615}, # MOLIPA
-    {"id": "315", "local": "XMWP", "lat":-15.063915 , "lon": 35.251920}, # MOLIPA
-    {"id": "320", "local": "XMW1", "lat":-0, "lon": 0},
+    {"id": "315", "local": "XMWP", "lat":-15.061362, "lon": 35.258714}, # MOLIPA
+    {"id": "320", "local": "XMW1", "lat":-15.063917, "lon": 35.248679},
     {"id": "50190", "local": "XMWW1T", "lat": -15.064601, "lon": 35.237027}, # MOLIPA
 
 
     {"id": "310", "local": "XLWXMWB", "lat": -15.063864, "lon": 35.233658}, # LIWONDE
-    {"id": "305", "local": "XLWXMWA", "lat":-15.071046, "lon": 35.193953}, # LIWONDE
-    {"id": "290", "local": "XLW31", "lat":-0, "lon": 0},
-    {"id": "50180", "local": "XLWW2T", "lat": -15.080988, "lon": 35.166647}, # LIWONDE
-    {"id": "50175", "local": "XLWW4AT", "lat":-15.086635, "lon": 35.147101}, # LIWONDE
-    {"id": "50155", "local": "XLWW4BT", "lat":-0, "lon": 0},
-    {"id": "74", "local": "XLWW8T", "lat":-0, "lon": 0},
-    {"id": "81", "local": "XLW25", "lat":-0, "lon": 0},
-    {"id": "76", "local": "XLWW10T", "lat":-0, "lon": 0},
-    {"id": "50170", "local": "XLWW6T", "lat":-0, "lon": 0},
-    {"id": "300", "local": "XLW23", "lat":-0, "lon": 0},
-    {"id": "77", "local": "XLWW12T", "lat":-0, "lon": 0},
-    {"id": "78", "local": "XLW24", "lat":-0, "lon": 0},
-    {"id": "79", "local": "XLW15", "lat":-0, "lon": 0},
-    {"id": "285", "local": "XLW21", "lat":-0, "lon": 0},
-    {"id": "295", "local": "XLW2", "lat":-0, "lon": 0},
-    {"id": "275", "local": "XLW14", "lat":-0, "lon": 0},
-    {"id": "270", "local": "XLW13", "lat":-0, "lon": 0},
-    {"id": "265", "local": "XLWP", "lat":-15.093813, "lon": 35.125468}, # LIWONDE
-    {"id": "50145", "local": "XLWW7T", "lat":-0, "lon": 0},
-    {"id": "50150", "local": "XLWW3AT", "lat":-15.100646, "lon": 35.106244}, # LIWONDE
-    {"id": "50160", "local": "XLWW3BT", "lat":-0, "lon": 0},
-    {"id": "280", "local": "XLW11", "lat":-0, "lon": 0},
-    {"id": "50140", "local": "XLWW1T", "lat":-15.111770, "lon": 35.080206}, # LIWONDE
+    {"id": "305", "local": "XLWXMWA", "lat":-15.060791, "lon": 35.228093}, # LIWONDE
+    {"id": "290", "local": "XLW31", "lat":-15.061842, "lon": 35.221918},
+    {"id": "50180", "local": "XLWW2T", "lat":-15.065317, "lon": 35.219224}, # LIWONDE
+    {"id": "50175", "local": "XLWW4AT", "lat":-15.068811, "lon": 35.214100}, # LIWONDE
+    {"id": "50155", "local": "XLWW4BT", "lat":-15.068578, "lon": 35.206943},
+    {"id": "74", "local": "XLWW8T", "lat":-15.069700, "lon": 35.199952},
+    {"id": "81", "local": "XLW25", "lat":-15.071046, "lon": 35.193953},
+    {"id": "76", "local": "XLWW10T", "lat":-15.074119, "lon": 35.187004},
+    {"id": "50170", "local": "XLWW6T", "lat":-15.076670, "lon": 35.180247},
+    {"id": "300", "local": "XLW23", "lat":-15.078628, "lon": 35.172795},
+    {"id": "77", "local": "XLWW12T", "lat":-15.080988, "lon": 35.166647},
+    {"id": "78", "local": "XLW24", "lat":-15.080551, "lon": 35.158369},
+    {"id": "79", "local": "XLW15", "lat":-15.082225, "lon": 35.154572},
+    {"id": "285", "local": "XLW21", "lat":-15.085178, "lon": 35.151337},
+    {"id": "295", "local": "XLW2", "lat":-15.085178, "lon": 35.151337},
+    {"id": "275", "local": "XLW14", "lat":-15.086635, "lon": 35.147101},
+    {"id": "270", "local": "XLW13", "lat":-15.087747, "lon": 35.142139},
+    {"id": "265", "local": "XLWP", "lat":-15.088858, "lon": 35.138247}, # LIWONDE
+    {"id": "50145", "local": "XLWW7T", "lat":-15.090396, "lon": 35.134162},
+    {"id": "50150", "local": "XLWW3AT", "lat":-15.093813, "lon": 35.125468}, # LIWONDE
+    {"id": "50160", "local": "XLWW3BT", "lat":-15.095045, "lon": 35.119343},
+    {"id": "280", "local": "XLW11", "lat":-15.099417, "lon": 35.108024},
+    {"id": "50140", "local": "XLWW1T", "lat":-15.105357, "lon": 35.091347}, # LIWONDE
 
     {"id": "260", "local": "XNWXLWC", "lat": -15.109689, "lon": 35.077250}, # NKAYA NEW
     {"id": "255", "local": "XNWXLWB", "lat":-15.107041, "lon": 35.073128}, # NKAYA NEW
     {"id": "250", "local": "XNWXLWA", "lat":-15.106188, "lon": 35.065343}, # NKAYA NEW
-    {"id": "50135", "local": "XNWW2T", "lat": -15.113591, "lon": 35.052057}, # NKAYA NEW
-    {"id": "240", "local": "XNWP", "lat":-0, "lon": 0},
-    {"id": "245", "local": "XNW1", "lat":-0, "lon": 0}, 
-    {"id": "50130", "local": "XNWW1T", "lat": -15.119886, "lon": 35.037286}, # NKAYA NEW
+    {"id": "50135", "local": "XNWW2T", "lat":-15.110049, "lon": 35.059860}, # NKAYA NEW
+    {"id": "240", "local": "XNWP", "lat":-15.113591, "lon": 35.052057},
+    {"id": "245", "local": "XNW1", "lat":-15.118383, "lon": 35.046479}, 
+    {"id": "50130", "local": "XNWW1T", "lat":-15.119633, "lon": 35.039337}, # NKAYA NEW
     
    
     {"id": "235", "local": "XNTXNW", "lat": -15.120123, "lon": 35.036548}, # NKAYA JUNCTION
@@ -474,33 +474,33 @@ railway_line = [
     {"id": "230", "local": "XL6XNTC", "lat":-15.262248, "lon": 34.928802}, # LOOP 6 CL
     {"id": "225", "local": "XL6XNTB", "lat":-15.289011, "lon": 34.917683}, # LOOP 6 CL
     {"id": "220", "local": "XL6XNTA", "lat":-15.308907, "lon": 34.898314}, # LOOP 6 CL
-    {"id": "50120", "local": "XL6W2T", "lat": -15.310663, "lon": 34.891729}, # LOOP 6 CL
+    {"id": "50120", "local": "XL6W2T", "lat":-15.326188, "lon": 34.874570}, # LOOP 6 CL
     {"id": "210", "local": "XL6P", "lat":-15.358982, "lon": 34.864628}, # LOOP 6 CL
-    {"id": "215", "local": "XL61", "lat":-0, "lon": 0},
-    {"id": "50115", "local": "XL6W1T", "lat": -15.385787, "lon": 34.848715}, # LOOP 6 CL
+    {"id": "215", "local": "XL61", "lat":-15.379405, "lon": 34.852649},
+    {"id": "50115", "local": "XL6W1T", "lat": -15.400746, "lon": 34.837289}, # LOOP 6 CL
 
 
     {"id": "205", "local": "XZAXL6B", "lat": -15.411509910165, "lon":34.8243404319391}, # FACILITIES ZALEWA
     {"id": "4", "local": "XZAXL6A", "lat": -15.412535, "lon": 34.822071}, # FACILITIES ZALEWA
-    {"id": "7", "local": "XZAW2T", "lat": -15.415670, "lon": 34.816683}, # FACILITIES ZALEWA
-    {"id": "6", "local": "XZAW1T", "lat":-15.420398, "lon": 34.810637}, # FACILITIES ZALEWA
-    {"id": "73", "local": "XZA2", "lat":-0, "lon": 0},
-    {"id": "72", "local": "XZA1", "lat":-0, "lon": 0},
+    {"id": "7", "local": "XZAW2T", "lat":-15.414228, "lon": 34.819831}, # FACILITIES ZALEWA
+    {"id": "6", "local": "XZAW1T", "lat":-15.415670, "lon": 34.816683}, # FACILITIES ZALEWA
+    {"id": "73", "local": "XZA2", "lat":-15.417575, "lon": 34.812118},
+    {"id": "72", "local": "XZA1", "lat":-15.420398, "lon": 34.810637},
     
     
     {"id": "200", "local": "XL5XZAB", "lat": -15.4227564469314, "lon":34.8089932888488}, # LOOP 5 CL
     {"id": "195", "local": "XL5XZAA", "lat":-15.444041, "lon": 34.792220}, # LOOP 5 CL
     {"id": "50110", "local": "XL5W2T", "lat":-15.475741, "lon": 34.758440}, # LOOP 5 CL
     {"id": "185", "local": "XL5P", "lat":-15.512134, "lon": 34.721874}, # LOOP 5 CL
-    {"id": "190", "local": "XL51", "lat":-0, "lon": 0},
-    {"id": "50105", "local": "XL5W1T", "lat":-15.543006, "lon": 34.680472}, # LOOP 5 CL
+    {"id": "190", "local": "XL51", "lat":-15.528027, "lon": 34.698128},
+    {"id": "50105", "local": "XL5W1T", "lat":-15.554079, "lon": 34.675930}, # LOOP 5 CL
 
     {"id": "180", "local": "XL4XL5C", "lat": -15.5629497804683, "lon":34.6678802631617}, # LOOP 4 CL
     {"id": "175", "local": "XL4XL5B", "lat": -15.589116, "lon": 34.640521}, # LOOP 4 CL
     {"id": "170", "local": "XL4XL5A", "lat":-15.621767, "lon": 34.611555}, # LOOP 4 CL
     {"id": "50100", "local": "XL4W2T", "lat":-15.650991, "lon": 34.550998}, # LOOP 4 CL
     {"id": "160", "local": "XL4P", "lat":-15.710740, "lon": 34.522648}, # LOOP 4 CL
-    {"id": "165", "local": "XL41", "lat":-0, "lon": 0},
+    {"id": "165", "local": "XL41", "lat":-15.731547, "lon": 34.508823},
     {"id": "50095", "local": "XL4W1T", "lat":-15.764191, "lon": 34.493239}, # LOOP 4 CL
 
     {"id": "155", "local": "XL3XL4D", "lat":-15.770906, "lon": 34.490816}, # LOOP 3 CL
@@ -508,13 +508,13 @@ railway_line = [
     {"id": "145", "local": "XL3XL4B", "lat": -15.805397, "lon": 34.456430}, # LOOP 3 CL
     {"id": "140", "local": "XL3XL4A", "lat":-15.811192, "lon": 34.429843}, # LOOP 3 CL
     {"id": "50090", "local": "XL3W2T", "lat":-15.823531, "lon": 34.398662}, # LOOP 3 CL
-    {"id": "115", "local": "XL321", "lat":-0, "lon": 0},
-    {"id": "50065", "local": "XL3W4T", "lat":-0, "lon": 0},
-    {"id": "110", "local": "XL311", "lat":-0, "lon": 0},
-    {"id": "125", "local": "XL32", "lat":-0, "lon": 0},
-    {"id": "105", "local": "XL3P", "lat":-15.819891, "lon": 34.354121}, # LOOP 3 CL
-    {"id": "3", "local": "XL3W3T", "lat":-0, "lon": 0},
-    {"id": "50055", "local":"XL3W1T", "lat":-15.817426, "lon": 34.304692}, # LOOP 3 CL
+    {"id": "115", "local": "XL321", "lat":-15.821601, "lon": 34.379831},
+    {"id": "50065", "local": "XL3W4T", "lat":-15.819891, "lon": 34.354121},
+    {"id": "110", "local": "XL311", "lat":-15.819874, "lon": 34.334841},
+    {"id": "125", "local": "XL32", "lat":-15.828339, "lon": 34.326603},
+    {"id": "105", "local": "XL3P", "lat":-15.818586, "lon": 34.306037}, # LOOP 3 CL
+    {"id": "3", "local": "XL3W3T", "lat":-15.809741, "lon":  34.293932},
+    {"id": "50055", "local":"XL3W1T", "lat":-15.809781, "lon": 34.281653}, # LOOP 3 CL
  
  
     {"id": "100", "local": "XL2XL3D", "lat": -15.8197868392766, "lon":34.2810857141549}, # LOOP 2 CL
@@ -522,25 +522,25 @@ railway_line = [
     {"id": "90", "local": "XL2XL3B", "lat": -15.869945, "lon": 34.189507}, # LOOP 2 CL
     {"id": "85", "local": "XL2XL3A", "lat":-15.887151, "lon": 34.134961}, # LOOP 2 CL
     {"id": "50050", "local": "XL2W2T", "lat":-15.915874, "lon": 34.089737}, # LOOP 2 CL
-    {"id": "75", "local": "XL2P", "lat":-15.946431, "lon": 34.050878}, # LOOP 2 CL
-    {"id": "80", "local": "XL21", "lat":-0, "lon": 0},
+    {"id": "75", "local": "XL2P", "lat":-15.938496, "lon": 34.063635}, # LOOP 2 CL
+    {"id": "80", "local": "XL21", "lat":-15.950559, "lon": 34.028979},
     {"id": "50045", "local": "XL2W1T", "lat":-15.971837, "lon": 34.003305}, # LOOP 2 CL
 
 
     {"id": "65", "local": "WL1XL2D", "lat": -15.978821, "lon": 33.997530}, # LOOP 1 CL 
-    {"id": "60", "local": "WL1XL2C", "lat":-15.996321, "lon": 33.974954}, # LOOP 1 CL
-    {"id": "70", "local": "WL1WL2B", "lat":-16.015424, "lon": 33.954668}, # LOOP 1 CL
-    {"id": "55", "local": "WL1XL2A", "lat":-16.039052, "lon": 33.937208}, # LOOP 1 CL   
-    {"id": "50040", "local": "WL1W2T", "lat": -16.058548, "lon": 33.918891}, # LOOP 1 CL
-    {"id": "2", "local": "WL131", "lat":-16.080588, "lon": 33.9024223}, # LOOP 1 CL
-    {"id": "50015", "local": "WL1W4T", "lat":-16.108250, "lon": 33.870087}, # LOOP 1 CL
-    {"id": "40", "local": "WL122", "lat":-16.115015, "lon": 33.842186}, # LOOP 1 CL        
-    {"id": "35", "local": "WL121", "lat":-16.119586, "lon": 33.812839}, # LOOP 1 CL
-    {"id": "38", "local": "WL112", "lat":-16.136014, "lon": 33.792017}, # LOOP 1 CL
-    {"id": "1", "local": "WL1W3T", "lat": -16.161205, "lon": 33.793738}, # LOOP 1
-    {"id": "25", "local": "WL1P", "lat":-0, "lon": 0},
-    {"id": "30", "local": "WL111", "lat":-0, "lon": 0},
-    {"id": "50010", "local": "WL1W1T", "lat":-0, "lon": 0},
+    {"id": "60", "local": "WL1XL2C", "lat":-15.991441, "lon": 33.980888}, # LOOP 1 CL
+    {"id": "70", "local": "WL1WL2B", "lat":-16.005993, "lon": 33.964900}, # LOOP 1 CL
+    {"id": "55", "local": "WL1XL2A", "lat":-16.025963, "lon": 33.947083}, # LOOP 1 CL   
+    {"id": "50040", "local": "WL1W2T", "lat": -16.043539, "lon": 33.933075}, # LOOP 1 CL
+    {"id": "2", "local": "WL131", "lat":-16.059640, "lon": 33.917236}, # LOOP 1 CL
+    {"id": "50015", "local": "WL1W4T", "lat":-16.080217, "lon": 33.902504}, # LOOP 1 CL
+    {"id": "40", "local": "WL122", "lat":-16.097639, "lon": 33.892911}, # LOOP 1 CL        
+    {"id": "35", "local": "WL121", "lat":-16.108250, "lon": 33.870087}, # LOOP 1 CL
+    {"id": "38", "local": "WL112", "lat":-16.115015, "lon": 33.842186}, # LOOP 1 CL
+    {"id": "1", "local": "WL1W3T", "lat":-16.117612, "lon": 33.824666}, # LOOP 1
+    {"id": "25", "local": "WL1P", "lat":-16.125223, "lon": 33.808442},
+    {"id": "30", "local": "WL111", "lat":-16.136014, "lon": 33.792017},
+    {"id": "50010", "local": "WL1W1T", "lat":-16.161205, "lon": 33.793738},
 
     {"id": "20", "local": "RMVWL1D", "lat": -16.1633212771317, "lon":33.795387671617}, # MOATIZE TERMINAL
     {"id": "15", "local": "RMVWL1C", "lat": -16.163321, "lon":33.795388}, # MOATIZE TERMINAL
