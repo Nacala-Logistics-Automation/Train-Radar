@@ -39,6 +39,30 @@
         .logout-button:hover {
             background-color: #d32f2f;
         }
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 18px; /* Diminui o tamanho do título em dispositivos menores */
+            }
+
+            .logout-button {
+                font-size: 12px; /* Diminui o tamanho do botão de logout */
+                padding: 8px 16px; /* Ajusta o padding no botão de logout */
+            }
+
+            #toggleTowers {
+                font-size: 12px; /* Diminui o tamanho do botão Show Locations */
+                padding: 8px 16px;
+            }
+
+            /* Ajusta a imagem do logotipo para telas pequenas */
+            img {
+                width: 100px;
+                left: 10px;
+                top: 10px;
+            }
+        }
     </style>
 </head>
 <body>
