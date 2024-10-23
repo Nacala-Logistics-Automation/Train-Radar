@@ -25,13 +25,28 @@
             width: 100%;
             max-width: 400px;
             box-sizing: border-box;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* Centralizar a imagem */
+        .form-group img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
 
         h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
+            margin: 0;
+            margin-top: 10px;
             font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif; /* Troca a fonte para algo mais limpo */
+            font-weight: 600; /* Torna a fonte semibold */
+            color: #008080; /* Cor azul suave para combinar com o tema */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve ao texto */
+            letter-spacing: 1.2px; /* Espaça levemente as letras para uma aparência mais elegante */
+            text-align: center; /* Centraliza o texto no cabeçalho */
         }
 
         /* Estilos dos campos do formulário */
@@ -64,7 +79,7 @@
         .login-btn {
             width: 100%;
             padding: 12px;
-            background-color: #4CAF50;
+            background-color: #008080;
             color: white;
             font-size: 16px;
             border: none;
@@ -73,7 +88,7 @@
         }
 
         .login-btn:hover {
-            background-color: #45a049;
+            background-color: #E0A72C;
         }
 
         /* Mensagens flash */
@@ -81,6 +96,7 @@
             margin-top: 20px;
             list-style-type: none;
             padding: 0;
+            text-align: center;
         }
 
         .messages li {
@@ -122,6 +138,10 @@
                 padding: 20px;
             }
 
+            img {
+                max-width: 260px;
+            }
+
             h1 {
                 font-size: 22px;
             }
@@ -155,9 +175,10 @@
 <body>
 
 <div class="login-container">
-    <h1>Login</h1>
     <form method="POST">
         <div class="form-group">
+            <img src="{{ url_for('static', filename='images/image.png') }}" alt="Logo">
+            <h1>LOGIN</h1>
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required>
         </div>
@@ -167,7 +188,7 @@
             <input type="password" name="password" id="password" required>
             <!---<span class="toggle-password" onclick="togglePasswordVisibility()"></span>-->
         </div>
-        
+        <label style="font-size: 12px; font-weight: 100; font-style: italic; margin: 10px; text-align: center;" for="">* Contact the automation team for request the user and password access</label>
         <input type="submit" value="Login" class="login-btn">
     </form>
 
