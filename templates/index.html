@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.min.js"></script>
@@ -21,59 +22,118 @@
         .custom-popup .leaflet-popup-tip {
             background-color: rgba(255, 255, 255, 0.664); /* O pequeno triângulo do popup */
         }
+
         .logout-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
             background-color: #f44336;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 6px 10px;
             text-align: center;
             font-size: 14px;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            margin-left: 20px;
         }
 
         .logout-button:hover {
             background-color: #d32f2f;
         }
 
+        /* Centraliza o mapa e ajusta o layout para que os botões fiquem no topo */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+        /* Estilo do cabeçalho */
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+        }
+
+        .header h1 {
+            margin: 0;
+            margin-top: 10px;
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif; /* Troca a fonte para algo mais limpo */
+            font-weight: 600; /* Torna a fonte semibold */
+            color: #008080; /* Cor azul suave para combinar com o tema */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve ao texto */
+            letter-spacing: 1.2px; /* Espaça levemente as letras para uma aparência mais elegante */
+            text-align: center; /* Centraliza o texto no cabeçalho */
+        }
+
+        .header .logout-button {
+            align-self: center;
+        }
+
+        /* Ajusta a posição do botão "Show Locations" à esquerda */
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+
+        /* Mapa */
+        #map {
+            width: 100%;
+            height: 600px;
+            margin-top: 20px;
+        }
+
         /* Media query para dispositivos móveis */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 18px; /* Diminui o tamanho do título em dispositivos menores */
+        @media (max-width: 668px) {
+            .header h1 {
+                font-size: 16px; /* Diminui o tamanho do título em dispositivos menores */
             }
 
-            .logout-button {
+            .header .logout-button {
                 font-size: 12px; /* Diminui o tamanho do botão de logout */
                 padding: 8px 16px; /* Ajusta o padding no botão de logout */
             }
 
             #toggleTowers {
                 font-size: 12px; /* Diminui o tamanho do botão Show Locations */
-                padding: 8px 16px;
+                padding: 4px 8px;
             }
 
             /* Ajusta a imagem do logotipo para telas pequenas */
-            img {
+            .header img {
                 width: 100px;
-                left: 10px;
-                top: 10px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>EE - Train Tracker</h1>
-    <img src="{{ url_for('static', filename='images/image.png') }}" alt="Logo" style="position: absolute; top: 10px; left: 45%; width: 150px; height: auto;">
-    
-    <!-- Botão para mostrar/ocultar torres -->
-    <button id="toggleTowers">Show Locations</button>
-    <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+    <div class="container">
+        <!-- Cabeçalho com título, logotipo e botão de logout -->
+        <div class="header">
+            <img src="{{ url_for('static', filename='images/image.png') }}" alt="Logo">
+            <h1>EE - Train Tracker</h1>
+            <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+        </div>
 
-    <div id="map" style="width: 100%; height: 600px;"></div>
+        <!-- Botão para mostrar/ocultar torres -->
+        <div class="button-container">
+            <button id="toggleTowers">Show Locations</button>
+        </div>
+
+        <!-- Mapa centralizado -->
+        <div id="map"></div>
+    </div>
 
     <script src="{{ url_for('static', filename='js/map.js') }}"></script>
 </body>

@@ -25,7 +25,7 @@ var railwayLine = [];
 // Obtém os dados da linha férrea de um arquivo JSON
 $.getJSON('/static/js/railway.json', function(data) {
     railwayLine = data;
-    var polyline = L.polyline(railwayLine.map(point => [point.lat, point.lon]), {color: 'blue'}).addTo(map);
+    var polyline = L.polyline(railwayLine.map(point => [point.lat, point.lon]), {color: '#008080'}).addTo(map);
 });
 
 // Função para criar ícone de trem com base no train_id e cor condicional
