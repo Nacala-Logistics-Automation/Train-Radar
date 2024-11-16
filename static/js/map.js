@@ -133,12 +133,32 @@ function updateMarkers() {
                 if (markers[key]) {
                     // Atualiza a posição do marcador existente
                     markers[key].setLatLng([train.latitude, train.longitude], { animate: true, duration: 1.5 })
-                        .setPopupContent("Block: " + train.bloco + "<br>Start Km: " + train.km_fim + "<br>End Km: " + train.km_ini, { className: 'custom-popup' })
+                        .setPopupContent(
+                               "Train: " + train.prefixo
+                             + "<br>Loco: " + train.loco
+                             + "<br>Dept. Time: " + train.partida
+                             + "<br>Est. Arrival Time: " + train.chegada
+                             + "<br>Block: " + train.bloco
+                             + "<br>Start Km: " + train.km_fim 
+                             + "<br>End Km: " + train.km_ini
+                             + "<br>Passengers: " + train.trip
+                             + "<br>Last Update: " + train.update,
+                             { className: 'custom-popup' })
                         .getPopup().options.className = 'custom-popup';
                 } else {
                     // Cria um novo marcador
                     var marker = L.marker([train.latitude, train.longitude], {icon: createTrainIcon(train.prefixo)})
-                        .bindPopup("Block: " + train.bloco + "<br>Start Km: " + train.km_fim + "<br>End Km: " + train.km_ini, { className: 'custom-popup' })
+                        .bindPopup(
+                               "Train: " + train.prefixo
+                             + "<br>Loco: " + train.loco
+                             + "<br>Dept. Time: " + train.partida
+                             + "<br>Est. Arrival Time: " + train.chegada
+                             + "<br>Block: " + train.bloco
+                             + "<br>Start Km: " + train.km_fim 
+                             + "<br>End Km: " + train.km_ini
+                             + "<br>Passengers: " + train.trip
+                             + "<br>Last Update: " + train.update, 
+                             { className: 'custom-popup' })
                         .addTo(map);
                     markers[key] = marker;
                 }
