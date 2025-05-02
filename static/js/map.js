@@ -31,7 +31,7 @@ $.getJSON('/static/js/railway.json', function(data) {
 // Função para criar ícone de trem com base no train_id e cor condicional
 function createTrainIcon(train_id) {
     var lastDigit = parseInt(train_id.toString().slice(-1), 10);
-    var iconColor = (lastDigit % 2 === 0) ? 'black' : 'green';
+    var iconColor = (lastDigit === 5) ? 'red' : (lastDigit % 2 === 0) ? 'black' : 'green';
     var train_idColor = (lastDigit % 2 === 0) ? 'black' : 'green';
     
     return L.divIcon({
